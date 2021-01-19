@@ -1,0 +1,4 @@
+
+  ,  "angularCompilerOptions": {
+    "enableIvy": false
+  }
