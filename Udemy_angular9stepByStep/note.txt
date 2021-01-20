@@ -3,3 +3,5 @@ npm install -g @angular/cli
 ng new my-app
 cd my-app
 ng serve --open
+
+ลง bootstrap แล้วไม่มี intelisense แสดงออกมา เมื่อพิมพ์  หา extension ลงไปหลายตัว ก็ไม่ออก แต่พอ uninstall ,disable หมด ก็หาย
