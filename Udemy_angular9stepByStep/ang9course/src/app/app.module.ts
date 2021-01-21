@@ -7,6 +7,7 @@ import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
+import { RouterModule } from '@angular/router'; // import เข้ามา เพื่อ ทำ router link
 
 @NgModule({
   declarations: [
@@ -15,12 +16,18 @@ import { NavComponent } from './nav/nav.component';
     ProductComponent,
     ContactComponent,
     AboutComponent,
-    NavComponent
+    NavComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent },
+      { path: 'about', component: AboutComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: 'product', component: ProductComponent },
+    ]),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

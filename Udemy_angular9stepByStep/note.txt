@@ -9,3 +9,11 @@ ng serve --open
 ep5
 แนะนำ extension Bootstrap 4, Font awesome 4, Font Awesome 5 Free & Pro snippets
 เป็น snippet สร้าง component ใน bootstrap มาทั้ง component
+
+ep6 Asset
+รูปไฟล์ต่างๆ เอาไว้ใน โฟลเดอร์ Asset
+
+ep7 router link 
+import Module routerModule มาก่อน เพื่อใช้ 
+แล้วตั้งค่า fromRoot router ผูกกับ Component
+tag a ถ้าใช้ href จะ refresh หน้าทุกครั้ง แต่ถ้าใช้ routerLink จะ เปลี่ยน เฉพาะส่วน
