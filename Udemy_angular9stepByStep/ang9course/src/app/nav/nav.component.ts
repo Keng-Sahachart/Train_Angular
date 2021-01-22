@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
+  labelHome = "Home";
+  labelProduct = "Product";
+  labelContact = "Contact";
+  labelAbout = "About";
+
   constructor() { }
 
   ngOnInit(): void {

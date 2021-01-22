@@ -17,3 +17,11 @@ ep7 router link
 import Module routerModule มาก่อน เพื่อใช้ 
 แล้วตั้งค่า fromRoot router ผูกกับ Component
 tag a ถ้าใช้ href จะ refresh หน้าทุกครั้ง แต่ถ้าใช้ routerLink จะ เปลี่ยน เฉพาะส่วน
+
+ep8 binding
+{{ expression }}	=> interpolation / วางตัวแปรเพื่อ แสดงผล คำนวน 
+[property]="expression"	=> one way binging / กำหนดค่าให้ component
+(event)="statement"	=> event binding / กำหนด ฟังก์ชั้น ให้ event
+[(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต
+
+สร้างตัวแปรแล้ว ไม่เกิด intellisense ที่หน้าอื่น เมื่อจะพิมพ์เรียกใช้งาน
