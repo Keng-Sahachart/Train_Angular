@@ -25,3 +25,9 @@ ep8 binding
 [(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต
 
 สร้างตัวแปรแล้ว ไม่เกิด intellisense ที่หน้าอื่น เมื่อจะพิมพ์เรียกใช้งาน
+ep9
+ {{ variable }}ที่หน้า .html คือการ ปรินท์ตัวแปร ออกมา ใน html
+ep10
+ใน .ts สร้าง object และมี property name:"value"
+ใน .html ปรินท์ {{ object.proertyName }} 
+
