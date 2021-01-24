@@ -51,10 +51,10 @@ ng serve --open \
  - tag a ถ้าใช้ href จะ refresh หน้าทุกครั้ง แต่ถ้าใช้ routerLink จะ เปลี่ยน เฉพาะส่วน
 
 ## ep 8. binding
-{{ expression }}	=> interpolation / วางตัวแปรเพื่อ แสดงผล คำนวน 
-[property]="expression"	=> one way binging / กำหนดค่าให้ component
-(event)="statement"	=> event binding / กำหนด ฟังก์ชั้น ให้ event
-[(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต
+{{ expression }}	=> interpolation / วางตัวแปรเพื่อ แสดงผล คำนวน   <br>
+[property]="expression"	=> one way binging / กำหนดค่าให้ component <br>
+(event)="statement"	=> event binding / กำหนด ฟังก์ชั้น ให้ event <br>
+[(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต <br>
 
 ## ep 9.
  {{ variable }}ที่หน้า .html คือการ ปรินท์ตัวแปร ออกมา ใน html
@@ -81,13 +81,13 @@ ng serve --open \
 	- export class ContactComponent implements OnInit { myFumc(){} }
  
 ## ep 13. create project with material design
- เป็น ประมาณว่า library css ของ angular ที่มีไว้ให้ใช้
-	- ng new miniStockAngular
-	- ng add @angular/materal   // ได้มา 30 กว่า เมก
-		- Would you like to share anonymous usage data ...? yes
-		- color Purple/Green
-		- Set up global Angular Material typography styles? Yes
-		- Set up browser animations for Angular Material? Yes
+ เป็น ประมาณว่า library css ของ angular ที่มีไว้ให้ใช้<br>
+	- ng new miniStockAngular<br>
+	- ng add @angular/materal   // ได้มา 30 กว่า เมก<br>
+		- Would you like to share anonymous usage data ...? yes<br>
+		- color Purple/Green<br>
+		- Set up global Angular Material typography styles? Yes<br>
+		- Set up browser animations for Angular Material? Yes<br>
  
 ## ep 14. material button
 	https://material.angular.io/components/categories
