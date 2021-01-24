@@ -1,0 +1,31 @@
+<p>login-register works!</p>
+
+<mat-card>
+    <mat-card-title>
+        Login to MiniStock System.
+    </mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Username/Email</mat-label>
+            <input matInput name="username" ngModel #username />
+            <mat-icon matSuffix>email</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input matInput name="password" ngModel #password />
+            <mat-icon matSuffix>password</mat-icon>
+        </mat-form-field>
+
+        <button mat-flat-button color="primary">
+            <mat-icon>check</mat-icon>
+            Login
+        </button>
+
+    </mat-card-content>
+</mat-card>
+
+<!-- 
+     matSuffix สั่งให้ icon ต่อหลัง ฟิลด์ 
+
+-->

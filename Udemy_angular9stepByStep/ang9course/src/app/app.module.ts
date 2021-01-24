@@ -7,7 +7,10 @@ import { ProductComponent } from './product/product.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NavComponent } from './nav/nav.component';
+
 import { RouterModule } from '@angular/router'; // import เข้ามา เพื่อ ทำ router link
+
+import { FormsModule } from '@angular/forms';  // เพื่อเอาไปใช้ทำ binding 2 way กับ ฟอร์ม ใน html
 
 @NgModule({
   declarations: [
@@ -20,7 +23,8 @@ import { RouterModule } from '@angular/router'; // import เข้ามา เ
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot([
+    FormsModule,  // 2 way binding กับ tag ฟอร์ม ใน html
+    RouterModule.forRoot([/* กำหนด router กับ page */
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'contact', component: ContactComponent },

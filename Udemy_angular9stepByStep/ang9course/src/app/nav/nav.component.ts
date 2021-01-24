@@ -18,6 +18,7 @@ export class NavComponent implements OnInit {
     contact: 'Contact',
     about: 'About',
   };
+ 
 
   constructor() {}
 

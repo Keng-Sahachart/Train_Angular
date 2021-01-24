@@ -1,1 +1,30 @@
 <p>contact works!</p>
+
+<div >
+    <form action="">
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" name="fullName" [(ngModel)]="sName" (keyup)="onNameChange()" class="form-control" placeholder="จะใช้ไม่ได้เพราะผูกไว้กับตัวแปร ยกเว้นตัวแปรยังไม่มีค่า"/>
+        </div>
+
+        <div class="form-group">
+            <label for="">Message</label>
+            <input type="text" name="Message" [(ngModel)]="sMessage" class="form-control" placeholder="ไม่แสดงผลเพราะตัวแปรมีค่า"/>
+        </div>
+
+        
+        <div class="form-group">
+            <label for="">Piority</label>
+            <input type="text" name="Piority" [(ngModel)]="nPiority" class="form-control" placeholder="ไม่แสดงผลเพราะตัวแปรมีค่า"/>
+        </div>
+
+        <input type="button" value="Press for call the event in .ts" (click)="myBtnOnPress()">
+    </form>
+</div>
+
+
+<p class="h1">Preview แสดงผลจากการแก้ไขตัวแปร</p>
+Name=> {{sName}}<br>
+Message=> {{sMessage}} <br>
+Message=> {{nPiority|number}} <br>
+<br>
