@@ -1,24 +1,24 @@
 # บันทึก การ ทำ WorkShop
 
-npm install -g @angular/cli
-จะได้ version ล่าสุด หรือ เลือก version เอาเอง (ยังไมได้ลอง)
-npm install @angular/cli@<specify_angular-cli_version_here>
-https://www.npmjs.com/package/@angular/cli?activeTab=versions
-╔════════════════════════════╦════════════════════════════╗
-║                            ║                            ║
-║ Angular-CLI version        ║ Angular version            ║
-║                            ║                            ║
-╠════════════════════════════╬════════════════════════════╣
-║ @angular/cli@8.3.29        ║ Angular 8.3.29             ║
-╠════════════════════════════╬════════════════════════════╣
-║ @angular/cli@9.1.3         ║ Angular 9.1.3              ║
-╠════════════════════════════╬════════════════════════════╣
-║ @angular/cli@10.2.1        ║ Angular 10.2.1             ║
-╚════════════════════════════╩════════════════════════════╝
-
-ng new my-app
-cd my-app
-ng serve --open
+npm install -g @angular/cli \
+จะได้ version ล่าสุด หรือ เลือก version เอาเอง (ยังไมได้ลอง) \
+npm install @angular/cli@<specify_angular-cli_version_here> \
+https://www.npmjs.com/package/@angular/cli?activeTab=versions \
+╔════════════════════════════╦════════════════════════════╗    <br/>
+║                            ║                            ║    <br/>
+║ Angular-CLI version        ║ Angular version            ║    <br/>
+║                            ║                            ║    <br/>
+╠════════════════════════════╬════════════════════════════╣    <br/>
+║ @angular/cli@8.3.29        ║ Angular 8.3.29             ║    <br/>
+╠════════════════════════════╬════════════════════════════╣    <br/>
+║ @angular/cli@9.1.3         ║ Angular 9.1.3              ║    <br/>
+╠════════════════════════════╬════════════════════════════╣    <br/>
+║ @angular/cli@10.2.1        ║ Angular 10.2.1             ║    <br/>
+╚════════════════════════════╩════════════════════════════╝    <br/>
+\
+ng new my-app \
+cd my-app \
+ng serve --open \
 
 
 
