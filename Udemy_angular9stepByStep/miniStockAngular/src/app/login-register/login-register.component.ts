@@ -10,8 +10,8 @@ import { Router,RouterModule } from '@angular/router';
 export class LoginRegisterComponent implements OnInit {
 
   userData = {
-    user: "",
-    password: "",
+    user: "admin",
+    password: "123456",
   }
 
 /** 

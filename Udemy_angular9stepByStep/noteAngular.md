@@ -18,9 +18,7 @@ https://www.npmjs.com/package/@angular/cli?activeTab=versions \
 \
 ng new my-app \
 cd my-app \
-ng serve --open \
-
-
+ng serve --open 
 
 
 #ปัญหาที่พบระว่าง เรียน
@@ -51,10 +49,10 @@ ng serve --open \
  - tag a ถ้าใช้ href จะ refresh หน้าทุกครั้ง แต่ถ้าใช้ routerLink จะ เปลี่ยน เฉพาะส่วน
 
 ## ep 8. binding
-{{ expression }}	=> interpolation / วางตัวแปรเพื่อ แสดงผล คำนวน   <br>
-[property]="expression"	=> one way binging / กำหนดค่าให้ component <br>
-(event)="statement"	=> event binding / กำหนด ฟังก์ชั้น ให้ event <br>
-[(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต <br>
+1. {{ expression }}	=> interpolation / วางตัวแปรเพื่อ แสดงผล คำนวน   <br>
+2. [property]="expression"	=> one way binging / กำหนดค่าให้ component <br>
+3. (event)="statement"	=> event binding / กำหนด ฟังก์ชั้น ให้ event <br>
+4. [(ngModel)]="property"	=> two way binding / ผูกค่าให้ วัตถุต่างๆ เช่น อินพุต <br>
 
 ## ep 9.
  {{ variable }}ที่หน้า .html คือการ ปรินท์ตัวแปร ออกมา ใน html
@@ -81,33 +79,33 @@ ng serve --open \
 	- export class ContactComponent implements OnInit { myFumc(){} }
  
 ## ep 13. create project with material design
- เป็น ประมาณว่า library css ของ angular ที่มีไว้ให้ใช้<br>
-	- ng new miniStockAngular<br>
-	- ng add @angular/materal   // ได้มา 30 กว่า เมก<br>
-		- Would you like to share anonymous usage data ...? yes<br>
-		- color Purple/Green<br>
-		- Set up global Angular Material typography styles? Yes<br>
-		- Set up browser animations for Angular Material? Yes<br>
+ เป็น ประมาณว่า ฒี library css ของ angular ที่มีไว้ให้ใช้ เป็น material เป็น Tag เหมือน HTML<br>
+	1. ng new miniStockAngular<br>
+	2. ng add @angular/materal   // ได้มา 30 กว่า เมก<br>
+		2.1. Would you like to share anonymous usage data ...? yes<br>
+		2.2. color Purple/Green<br>
+		2.3. Set up global Angular Material typography styles? Yes<br>
+		2.4. Set up browser animations for Angular Material? Yes<br>
  
 ## ep 14. material button
 	https://material.angular.io/components/categories
  คือการ กำหนด attribute ให้ component ใน html
 	- import ใน app.module.ts ก่อน 
-		- import {MatButtonModule} from '@angular/material/button'; 
+			- import {MatButtonModule} from '@angular/material/button'; 
 	- แล้วใน imports: [] 
 	- ใส่ attribute ใน tag ได้เลย
 		- <button mat-button>Basic</button>
  
 ## ep 15. create login page part 1
-	- ng g c LoginRegister // L ตัวใหญ๋ / สังเกตุว่า จะได้ โฟลเดอร์ login-register มี "-" ด้วย
- ในไฟล์ app.module.ts ใส่ แล้ว Import ตามนี้ ให้เรียบร้อย 
-	- import { MatButtonModule } from '@angular/material/button';// theme button
-	- import { MatCardModule } from '@angular/material/card';
-	- import { MatTabsModule } from '@angular/material/tabs';
-	- import { MatFormFieldModule } from '@angular/material/form-field';
-	- import { MatInputModule } from '@angular/material/input';
-	- import { MatCheckboxModule } from '@angular/material/checkbox';
-	- import { MatIconModule } from '@angular/material/icon';
+	- ng g c LoginRegister // L ตัวใหญ๋ / สังเกตุว่า จะได้ โฟลเดอร์ login-register มี "-" ด้วย \
+ ในไฟล์ app.module.ts ใส่ แล้ว Import ตามนี้ ให้เรียบร้อย  \
+	- import { MatButtonModule } from '@angular/material/button';// theme button <br>
+	- import { MatCardModule } from '@angular/material/card';<br>
+	- import { MatTabsModule } from '@angular/material/tabs';<br>
+	- import { MatFormFieldModule } from '@angular/material/form-field';<br>
+	- import { MatInputModule } from '@angular/material/input';<br>
+	- import { MatCheckboxModule } from '@angular/material/checkbox';<br>
+	- import { MatIconModule } from '@angular/material/icon';<br>
  
 ## ep 16. login design
 	- import { FormsModule } from '@angular/forms';
@@ -150,8 +148,10 @@ ng serve --open \
 	- ที่ login-register.component.ts ถ้า user password ถูกต้อง ให้ this.router.navigate(['dashboard'];
 	- dashboard.component.scss ลองเปลี่ยน css body backgroud-color เพราะ เปลี่ยน ViewEncapsulation เป็น none แล้ว
  
- 
- 
+ ## ep 20. connect with api
+	1. ng g s api/product   // เพื่อสร้าง ตัวเชื่อมต่อ api 
+	2. newfile ในโฟลเดอร์ api เพื่อ สร้าง model ProductModel.ts
+	3. 
  
  
  
