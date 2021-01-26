@@ -126,8 +126,29 @@ ng serve --open \
 	- ใส่ scss ใน login-register.component.scss เหมือน css ปกติเลย
 		แต่มีที่ css ที่เป็น tag ของ material => app-login-register {}
  
- 
- 
+## ep 17. backgroud color
+	- ถ้า จะเปลี่ยน css body backgroud-color จะเปลี่ยนที่ styles.scss ของ project เลย 
+	จะเปลี่ยนที่ body xxx.component.scss ของ component ไม่ได้
+
+## ep 18. check login
+	- ใช้ตัวแปร เก็บ User เก็บ user password 
+	- ผูกตัวแปร User กับ ฟิลด์ ใช้ two way binding
+	- สร้าง event click ที่ปุ่ม ล็อกอิน และผูกให้เรียบร้อย 
+		แล้ว ตรวจสอบ user password ถูกต้องหรือไม่ถ้าผิด ให้ ใช้ alert แจ้งออกมา
+	- ng g c Dashboard
+	
+## ep 19. login and change page
+	จากเดิม ใช้ router ใน app.module.ts นั้น ไม่ใช่วิธีที่ google เตรียมมาให้ใช้ ต้องไปใช้ที่ app-routing.module.ts เค้าเตรียมมาให้ใช้แล้ว (แต่ตอนแรก ไม่ได้ลง mudule router)
+	
+	- แก้ไขให้ app.component.html ใส่ <router-outlet> เพื่อ ให้ใช้ router แทน
+	- ที่ app-routing.module.ts 
+
+	- ที่ dashboard.component.ts กำหนด ViewEncapsulation เป็น none เพื่อจะเปลี่ยน css ของ page ตัวเอง
+	- ที่ login-register.component.ts เพิ่ม ตัวแปรเข้ามาจากภายนอก
+		public router: Router
+		* พบว่า angular ไม่ได้ import  Router มาให้ ต้อง ทำเอง
+	- ที่ login-register.component.ts ถ้า user password ถูกต้อง ให้ this.router.navigate(['dashboard'];
+	- dashboard.component.scss ลองเปลี่ยน css body backgroud-color เพราะ เปลี่ยน ViewEncapsulation เป็น none แล้ว
  
  
  

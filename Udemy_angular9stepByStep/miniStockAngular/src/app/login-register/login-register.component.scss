@@ -18,3 +18,7 @@ app-login-register {
     margin: auto ;// หรือ auto auto auto auto;  // ตามเข็มนาฬิกา --> บน ขวา ล่าง ซ้าย
     margin-top: 100px;  // ถ้ามีหลัง margin อีกที จะทำให้มีผลแทน margin:auto สำหรับด้านบน ด้วนเดียว
 }
+
+body { 
+    background-color: #000; // ไม่มีผลกับ component
+}
